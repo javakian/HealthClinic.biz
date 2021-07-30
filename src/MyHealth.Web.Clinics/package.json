@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "scripts": {
     "start": "node ./bin/www",
-    "postinstall": "bower install --config.interactive=false && gulp"
+    "postinstall": "bower install --config.interactive=false && gulp",
+    "prepublish": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "description": "MyHealth.Web.Clinics",
   "dependencies": {
@@ -14,11 +16,12 @@
     "morgan": "~1.3.0",
     "mssql": "^2.3.1",
     "q": "^1.4.1",
-    "serve-favicon": "~2.1.3"
+    "serve-favicon": "~2.1.3",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "bower": "^1.5.3",
-    "gulp": "^3.9.0",
+    "gulp": "^4.0.0",
     "gulp-concat": "^2.6.0",
     "gulp-cssmin": "0.1.7",
     "gulp-ignore": "^1.2.1",
@@ -33,5 +36,6 @@
     "gulp-zip": "^3.0.2",
     "minimist": "^1.2.0",
     "node-uuid": "^1.4.3"
-  }
+  },
+  "snyk": true
 }
