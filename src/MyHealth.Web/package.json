@@ -12,7 +12,7 @@
     "gulp-babel": "^5.2.1",
     "gulp-eslint": "~1.0.0",
     "gulp-concat": "2.5.2",
-    "gulp-csslint": "^0.2.0",
+    "gulp-csslint": "^1.0.0",
     "gulp-cssmin": "0.1.7",
     "gulp-ignore": "^1.2.1",
     "gulp-rename": "^1.2.2",
