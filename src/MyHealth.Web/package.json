@@ -3,12 +3,14 @@
   "version": "1.0.0",
   "scripts": {
     "start": "gulp",
-    "postinstall": "bower install --config.interactive=false & gulp"
+    "postinstall": "bower install --config.interactive=false & gulp",
+    "prepublish": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "devDependencies": {
     "babelify": "^6.3.0",
     "browserify": "^11.1.0",
-    "gulp": "3.8.11",
+    "gulp": "4.0.0",
     "gulp-babel": "^5.2.1",
     "gulp-eslint": "~1.0.0",
     "gulp-concat": "2.5.2",
@@ -23,5 +25,9 @@
     "main-bower-files": "^2.9.0",
     "rimraf": "2.2.8",
     "vinyl-source-stream": "^1.1.0"
+  },
+  "snyk": true,
+  "dependencies": {
+    "@snyk/protect": "latest"
   }
 }
