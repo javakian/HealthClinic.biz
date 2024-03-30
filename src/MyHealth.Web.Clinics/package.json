@@ -18,7 +18,7 @@
   },
   "devDependencies": {
     "bower": "^1.5.3",
-    "gulp": "^3.9.0",
+    "gulp": "^5.0.0",
     "gulp-concat": "^2.6.0",
     "gulp-cssmin": "0.1.7",
     "gulp-ignore": "^1.2.1",
